@@ -48,8 +48,9 @@ a{
     }
 
     .lista_cabecalho{
-        text-align: center;
-        margin-left: 2rem;
+        justify-content: center;
+        text-align: end;
+        margin-left: ;
     }
 
 }
