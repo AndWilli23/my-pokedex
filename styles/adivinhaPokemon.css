@@ -92,7 +92,7 @@ body{
 @media screen and (max-width: 380px) {
 
     #campo_adivinha_pokemon{
-        width: 90%;
+        width: 80%;
         margin-left: .6rem;
     }
 
