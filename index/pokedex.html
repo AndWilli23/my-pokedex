@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/pokedex.css">
+    <link rel="stylesheet" href="/styles/cabecalho.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Pokedex</title>
+    
+</head>
+<body>
+
+    <header class="cabecalho">
+
+        <picture class="icone_cabecalho">
+            <img  class="icone" src="/assents/meowth.png" alt="">
+        </picture>
+
+        <nav class="menu_cabecalho">
+            <ul class="lista_cabecalho">
+                <li class="lista_item_cabecalho"><a href="/index/home.html">Home</a></li>
+                <li class="lista_item_cabecalho"><a href="/index/AdivinhaPokemon.html">Quem é esse pokémon?</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="pokedex">
+        
+        <div class="card">
+
+            <div class="card_conteudo_imagem">
+
+                <div>
+                    <div class="card_input" >
+                       
+                        <input type="text" id="nomePokemon" placeholder="Pokémon ou id">
+                        <button onclick="atualizaPokemon()" type="submit" id="enviaPokemon" ><span id="carregando"></span><p id="label">Buscar</p></button>
+                       
+                    </div>
+
+                    <div class="card_conteudo"></div>
+                        <p id="nome">Bulbasaur</p>
+                        <p id="idPokemon">Id da pokédex: 1</p>
+                        <div class="imagemPokemon">
+                            <img class="imagemDoPokemon"  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" id="imagem">
+                        </div>
+                        
+                    </div>
+                </div>
+            
+                <div class="card_conteudo_tipo"> 
+
+                    <div>
+                        <div class="tipoPokemon">
+                            <p id="tipo"><span>Tipo:</span> grass, poison</p>
+                        </div>
+        
+                        <div class="habilidadesPokemon">
+                            <p id="habilidade"><span>Habilidades:</span> overgrow, chlorophyll</p>
+                        </div>
+                    </div>  
+
+                </div>
+        </div>
+
+        <section class="setaConteinerDireita">
+            <div class="setaDireita">
+                <a  href="/index/AdivinhaPokemon.html"><img class="setaDireita" src="/assents/seta-direita.png" alt=""></a>
+            </div>
+        </section>
+
+        <section class="setaConteinerEsquerda">
+            <div class="setaEsquerda">
+                <a  href="/index/home.html"><img class="setaEsquerda" src="/assents/seta-direita.png" alt=""></a>
+            </div>
+        </section>
+            
+            
+        
+
+    </mani>
+   
+
+
+    <script src="/scripts/pokedex.js"></script>
+</body>
+</html>

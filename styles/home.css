@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.conteudoPrincipal{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #3D61CC;
+}
+
+.tituloPrincipal{
+    margin: 0rem 12rem 0 12rem ;
+    font-weight: 700;
+    color:#FFCB05 ;
+    padding: 1px;
+    text-shadow: 2px 2px .5px #3B4CCA; 
+    font-size: 22px;
+}
+    
+.conteudoSegundario{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color:  #5abd8b ;
+    padding: 3rem 0;    
+}
+
+.ajuste{
+    font-size: 32px;
+    text-shadow: none;
+}
+
+.conteudoTexto{
+    color:#f6de00;
+    font-size: 22px;
+    margin: 4rem;
+    text-align: center;
+}
+
+.botaoPokemon{
+    width: 80%;
+    border-radius: 1rem;
+    padding: 10px 1rem;
+    background-color: #e65273;
+    border: 0.1px solid black;
+    font-size: 16px;
+    color: #f6de00;
+    font-weight: 500;
+    text-align: center;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudoTerciario{
+    display: flex;
+    padding: 3rem 1rem;  
+    background-color: #a34d42;
+}
+
+.imagem2{
+    animation: movimentacaoY 2s linear infinite;
+}
+
+@keyframes movimentacaoY {
+    0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-30px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+}
+
+.imagem3{
+    filter: brightness(0);
+    animation: aparecer 4s linear infinite;
+}
+
+
+@keyframes aparecer {
+    0%, 100% {
+        filter: brightness(0);
+    }
+    50% {
+        filter: brightness(1);
+    }
+}
+
+.imagemContainer3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ajuste2{
+    font-size: 32px;
+    text-shadow: none;
+}
+
+.ajusteBotao{
+    background-color: #207394;
+}
+
+
+.area-1, .area-2, .area-3{
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1060px) {
+    .conteudoSegundario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .conteudoTerciario{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 7rem 0;
+        gap: 2rem;
+        justify-content: center;
+        text-align: text;
+        flex-wrap: nowrap;
+    }
+
+    
+
+    .conteudoPrincipal{
+        padding: 9.2rem 0;
+    }
+
+    .tituloPrincipal{
+        margin: 0.5rem 1rem;
+    }
+
+}
+
+@media screen and (max-width: 476px){
+    img{
+        width: 80%;
+
+    }
+
+    .imagem2, .imagem3{
+        margin-left: 2.3rem;
+    }
+
+    .tituloPrincipal{
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 1060px){
+    .conteudoPrincipal{
+        padding: 13rem 0;
+    }
+
+    .conteudoSegundario{
+        padding: 14rem 1rem;
+        display: flex;
+
+    }
+
+    .conteudoTerciario{
+        padding: 13rem 0;
+
+        
+    }
+
+
+}

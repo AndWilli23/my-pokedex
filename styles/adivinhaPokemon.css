@@ -1,0 +1,90 @@
+body{
+    background-color: #a34d42  ;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 600;
+    color:#FFCB05 ;
+    padding: 1px;
+    text-shadow: 2px 2px .5px #3B4CCA; 
+    
+}
+
+.contudo_principal{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagemDoPokemon{
+    width: 60%;
+    text-align: center;
+}
+
+.conteudo_imagem{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#campo_adivinha_pokemon{
+    border-radius: 16px;
+    font-size: 1.8rem;
+    padding: 0 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.adivinhacao{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pontos{
+    margin-top: 1rem;
+    padding: 1.5rem 0;
+    font-size: 2rem;
+    border-radius: 2rem;
+    color: #FFCB05;
+}
+
+.conteinerInput{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.enviaPokemon{
+    width: 100%;
+    border-radius: 1rem;
+    padding: 12px 9rem;
+    background-color: #F6D63F;
+    border: 0.1px solid;
+    font-size: 16px;
+    color: #293cc5;
+    font-weight: 600;
+    box-shadow: 1.5px 1.5px 1.5px 1.5px #888888;
+}
+
+.enviaPokemon:hover{
+    font-size: 17px;
+}
+
+@media screen and (max-width: 500px) {
+
+    #campo_adivinha_pokemon{
+        padding: 0 1%;
+    }
+
+    .enviaPokemon{
+        padding: 12px 5rem;
+    }
+
+}

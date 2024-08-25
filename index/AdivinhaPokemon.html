@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/cabecalho.css">
+    <link rel="stylesheet" href="/styles/adivinhaPokemon.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Pokedex</title>
+    
+</head>
+<body>
+
+    <header class="cabecalho">
+
+        <picture class="icone_cabecalho">
+            <img  class="icone" src="/assents/meowth.png" alt="">
+        </picture>
+
+        <nav class="menu_cabecalho ajuste_cabecalho">
+            <ul class="lista_cabecalho">
+                <li class="lista_item_cabecalho"><a href="/index/home.html">Home</a></li>
+                <li class="lista_item_cabecalho"><a href="/index/pokedex.html">Pokédex</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="contudo_principal">
+
+        <div>
+            <h1 class="titulo">Quem é esse Pokémon?</h1>
+        </div>
+
+        <div class="conteiner_principal">
+
+            <div class="adivinhacao">
+
+                <div class="conteudo_imagem">
+                    <img class="imagemDoPokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/.png" alt="" id="AdivinhaPokemon">
+                </div> 
+
+                <div>
+                    <form action="">
+                        <input type="text" name="" id="campo_adivinha_pokemon" placeholder="Nome do pokémon">
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="conteinerInput">
+                
+                <div>
+                    <button class="enviaPokemon" onclick="inicializa() ">Trocar pokemon</button>
+                </div> 
+            </div>
+        </div>
+
+    </main>
+ 
+    <script src="/scripts/AdvinhaPokemon.js"></script>
+</body>
+</html>
