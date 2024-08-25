@@ -39,7 +39,9 @@ body{
     border: 0.1px solid;
 }
 
-
+#campo_adivinha_pokemon::placeholder{
+    text-align: center;
+}
 
 .adivinhacao{ 
     display: flex;
@@ -88,7 +90,7 @@ body{
     }
 
     .imagemDoPokemon{
-        width: 40%;
+        width: 100%;
         text-align: center;
     }
     
@@ -101,7 +103,11 @@ body{
     .enviaPokemon{
         padding: 12px 3rem;
     }
-  
+    
+    .imagemDoPokemon{
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 300px) {
@@ -111,5 +117,9 @@ body{
     .enviaPokemon{
         padding: 12px 1.5rem;
     }
-  
+    
+    .imagemDoPokemon{
+        width: 100%;
+        text-align: center;
+    }
 }
