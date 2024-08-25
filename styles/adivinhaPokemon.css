@@ -86,6 +86,11 @@ body{
     .enviaPokemon{
         padding: 12px 6rem;
     }
+
+    .imagemDoPokemon{
+        width: 40%;
+        text-align: center;
+    }
     
 }
 
